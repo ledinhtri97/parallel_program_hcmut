@@ -1,0 +1,31 @@
+What is Pthread
+Trong lịch sử, các nhà cung cấp phần cứng đã hiện thực phiên bản quyền sở hữu với Threads của chính họ. Những hiện thực này khác với thực chất với mỗi cái khác làm cho nó trở nên khó khăn với các lập trình viên để phát triển các ứng dụng threads di động.
+ 
+Chuẩn POSIX đã tiếp tục mở ra và trả qua các bản sửa đổi, bao gồm những chi tiết kỹ thuật Pthread
+
+Các Pthread được định nghĩa bởi những loại tập ngôn ngữ lập trình C và các lệnh gọi thủ tục (procedure call), đã hiện thực với một file header/include pthread.h và một thư viện thread - mặc dù thư viện này có thể là một phần các thư viện khác nữa, như là libc, trong một số hiện thực.
+
+Tất cả thread có truy cập vào cùng bộ  nhớ toàn cục, chia sẻ. Các thread cũng có những dữ liệu private của chính nó. Các lập trình viên là có trách nhiệm cho việc đồng bộ truy cập (bảo vệ) dữ liệu toàn cục chia sẻ.
+
+Multithread Programming with OpenMP 
+
+Motivation 
+
+OpenMP là gì?
+
+Một Application Program Interface (API) có thể được dùng để rõ ràng trực tiếp đa tiến trình, chia sẻ bộ nhớ song song.
+
+Bao gồm ba loại API chính kết hợp:
+
+Compiler Directives
+Runtime Library Routines
+Environment Variables
+
+Mục tiêu của OpenMP
+
+- Tiêu chuẩn hóa
+- Lean And Mean
+- Dể sử dụng
+- Linh động (Portability)
+
+Shared Memory Model OpenMP được thiết kế cho đa tiến trình / core, chia sẻ bộ nhớ các máy. Nằm dưói kiến trúc cơ bản có thể chia sẻ bộ nhớ UMA và NUMA
